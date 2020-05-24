@@ -26,7 +26,64 @@
 
       <section>
         <h2>Форма для покупки</h2>
-
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <fieldset>
+            <legend>Шаблоны</legend>
+            <table>
+              <tr>
+                <th>Наименование шаблона</th>
+                <th>Цена, руб.</th>
+                <th>Купить</th>
+              </tr>
+              <tr>
+                <td><label for="buy-sedona">Sedona. Информационный сайт для туристов</label></td>
+                <td>9 900</td>
+                <td><input type="checkbox" id="buy-sedona" name="sedona" checked></td>
+              </tr>
+              <tr>
+                <td><label for="buy-pink">Pink App. Продуктовый лендинг приложения для iOS и Android</label></td>
+                <td>9 900</td>
+                <td><input type="checkbox" id="buy-pink" name="pink"></td>
+              </tr>
+              <tr>
+                <td><label for="buy-barbershop">Barbershop. Сайт салона красоты для мужчин.</label></td>
+                <td>9 900</td>
+                <td><input type="checkbox" id="buy-barbershop" name="barbershop"></td>
+              </tr>
+              <tr>
+                <td><label for="buy-mishka">Mishka. Интернет-магазин вязаных игрушек</label></td>
+                <td>9 900</td>
+                <td><input type="checkbox" id="buy-mishka" name="mishka"></td>
+              </tr>
+              <tr>
+                <td><label for="buy-a-plus">A Plus. Лендинг курсов повышения квалификации</label></td>
+                <td>9 900</td>
+                <td><input type="checkbox" id="buy-a-plus" name="a-plus"></td>
+              </tr>
+              <tr>
+                <td><label for="buy-kvast">Кваст. Промо-сайт производителя крафтового кваса</label></td>
+                <td>9 900</td>
+                <td><input type="checkbox" id="buy-kvast" name="kvast"></td>
+              </tr>
+            </table>
+          </fieldset>
+          <fieldset>
+            <legend>Контактные данные</legend>
+            <p>
+              <label for="contacts-form-name">Ваше имя:</label><br>
+              <input id="contacts-form-name" type="text" name="name" placeholder="Имя Фамилия" required>
+            </p>
+            <p>
+              <label for="contacts-form-email">Ваш email:</label><br>
+              <input id="contacts-form-email" type="email" name="email" placeholder="email@example.com" required>
+            </p>
+            <p>
+              <label for="contacts-form-message">Дополнительно:</label><br>
+              <textarea id="contacts-form-message" name="message" rows="3"></textarea>
+            </p>
+          </fieldset>
+          <button type="submit">Купить</button>
+        </form>
       </section>
 
     </main>
@@ -70,15 +127,15 @@
       <h2>Напишите нам</h2>
       <form name="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
-          <label for="feedback-form-name">Ваше имя:</br></label>
+          <label for="feedback-form-name">Ваше имя:</label><br>
           <input id="feedback-form-name" type="text" name="name" placeholder="Имя Фамилия" required>
         </p>
         <p>
-          <label for="feedback-form-email">Ваш email:</br></label>
+          <label for="feedback-form-email">Ваш email:</label><br>
           <input id="feedback-form-email" type="email" name="email" placeholder="email@example.com" required>
         </p>
         <p>
-          <label for="feedback-form-message">Текст письма:</br></label>
+          <label for="feedback-form-message">Текст письма:</label><br>
           <textarea id="feedback-form-message" name="message" rows="4" required>В свободной форме</textarea>
         </p>
         <button type="submit">Отправить</button>
