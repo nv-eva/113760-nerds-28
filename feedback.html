@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-menu">
+        <a href="index.html">
+          <img src="img/logo-nerds.svg" width="160" height="65" alt="Перейти на главную страницу">
+        </a>
+        <ul>
+          <li><a href="blank.html">Студия</a></li>
+          <li><a href="blank.html">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="blank.html">Контакты</a></li>
+        </ul>
+        <a href="cart.html">Корзина</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="feedback">
+        <h2>Напишите нам</h2>
+        <form name="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label for="feedback-form-name">Ваше имя:</br></label>
+            <input id="feedback-form-name" type="text" name="name" placeholder="Имя Фамилия" required>
+          </p>
+          <p>
+            <label for="feedback-form-email">Ваш email:</br></label>
+            <input id="feedback-form-email" type="email" name="email" placeholder="email@example.com" required>
+          </p>
+          <p>
+            <label for="feedback-form-message">Текст письма:</br></label>
+            <textarea id="feedback-form-message" name="message" rows="4" required>В свободной форме</textarea>
+          </p>
+          <button type="submit">Отправить</button>
+        </form>
+      </section>
+    </main>
+
+  </body>
+</html>

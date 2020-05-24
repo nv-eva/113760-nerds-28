@@ -174,7 +174,7 @@
           <p>
             тел. +7 (812) 275-75-75
           </p>
-          <a href="blank.html">Напишите нам</a>
+          <a href="feedback.html">Напишите нам</a>
         </div>
       </section>
 
@@ -195,5 +195,25 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </section>
     </footer>
+
+    <section class="feedback">
+      <h2>Напишите нам</h2>
+      <form name="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="feedback-form-name">Ваше имя:</br></label>
+          <input id="feedback-form-name" type="text" name="name" placeholder="Имя Фамилия" required>
+        </p>
+        <p>
+          <label for="feedback-form-email">Ваш email:</br></label>
+          <input id="feedback-form-email" type="email" name="email" placeholder="email@example.com" required>
+        </p>
+        <p>
+          <label for="feedback-form-message">Текст письма:</br></label>
+          <textarea id="feedback-form-message" name="message" rows="4" required>В свободной форме</textarea>
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
+
   </body>
 </html>
