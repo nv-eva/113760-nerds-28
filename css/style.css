@@ -1,0 +1,36 @@
+:root {
+  --basic-white: #ffffff;
+  --basic-black: #000000;
+  --basic-blue: #009DE0;
+
+  --basic-red: #fb565a;
+  --basic-red-hover: #e74246;
+  --basic-red-press: #d73738;
+
+  --basic-green: #00ca74;
+  --basic-green-hover: #00bc6c;
+  --basic-green-press: #00aa62;
+
+  --basic-yellow: #efc84a;
+  --basic-yellow-hover: #eab534;
+  --basic-yellow-press: #e5a722;
+
+  --basic-grey: #eeeeee;
+  --basic-grey-hover: #dfdfdf;
+  --basic-grey-press: #d5d5d5;
+
+  --basic-form-icon: #4d4d4d;
+  --basic-grey-icon: #a6a6a6;
+  --basic-grey-social: #e1e1e1;
+  --basic-grey-slider: #c1c1c1;
+
+  --basic-gray-text: #666666;
+  --basic-black-text: #283136;
+  --basic-form-value: #444444;
+
+  --basic-form: #d7dcde;
+  --basic-form-hover: #b4b9bb;
+  --basic-form-scale: #d7dcdf;
+  --basic-form-range: #ababab;
+  
+}
