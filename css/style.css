@@ -1,3 +1,30 @@
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'),
+         url('../fonts/roboto.woff2') format('woff2'),
+         url('../fonts/roboto.woff') format('woff'),
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'),
+         url('../fonts/robotomedium.woff2') format('woff2'),
+         url('../fonts/robotomedium.woff') format('woff'),
+    font-weight: medium;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'),
+         url('../fonts/robotobold.woff2') format('woff2'),
+         url('../fonts/robotobold.woff') format('woff'),
+    font-weight: bold;
+    font-style: normal;
+}
+
 :root {
   --basic-white: #ffffff;
   --basic-black: #000000;
