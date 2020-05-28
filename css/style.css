@@ -143,9 +143,11 @@ a {
    color: var(--basic-red);
  }
 
-.main-menu a:not(.menu-active):focus {
-   outline-color: var(--basic-red);
-   outline-width: 3px;
+.main-menu a:not(.main-menu-logo):focus {
+  outline: none;
+  box-shadow:
+    0 0 0 3px var(--basic-gray),
+    0 0 0 6px var(--basic-red);
  }
 
 .main-menu a:not(.menu-active):not(.main-menu-logo):active {
@@ -233,8 +235,10 @@ a {
   background-color: var(--basic-red-hover);
 }
 .button-red:focus {
-  outline-color: var(--basic-red-active);
-  outline-width: 3px;
+  outline: none;
+  box-shadow:
+    0 0 0 3px var(--basic-white),
+    0 0 0 6px var(--basic-red-hover);
 }
 .button-red:active {
   background-color: var(--basic-red-active);
@@ -248,8 +252,10 @@ a {
   background-color: var(--basic-green-hover);
 }
 .button-green:focus {
-  outline-color: var(--basic-green-active);
-  outline-width: 3px;
+  outline: none;
+  box-shadow:
+    0 0 0 3px var(--basic-white),
+    0 0 0 6px var(--basic-green-hover);
 }
 .button-green:active {
   background-color: var(--basic-green-active);
@@ -263,8 +269,10 @@ a {
   background-color: var(--basic-yellow-hover);
 }
 .button-yellow:focus {
-  outline-color: var(--basic-yellow-active);
-  outline-width: 3px;
+  outline: none;
+  box-shadow:
+    0 0 0 3px var(--basic-white),
+    0 0 0 6px var(--basic-yellow-hover);
 }
 .button-yellow:active {
   background-color: var(--basic-yellow-active);
@@ -279,8 +287,10 @@ a {
   background-color: var(--basic-gray-hover);
 }
 .button-gray:focus {
-  outline-color: var(--basic-gray-active);
-  outline-width: 3px;
+  outline: none;
+  box-shadow:
+    0 0 0 3px var(--basic-white),
+    0 0 0 6px var(--basic-gray-hover);
 }
 .button-gray:active {
   color: rgba(0, 0, 0, 0.3);
@@ -337,7 +347,7 @@ a {
 	outline: none;
 	box-shadow:
 		0 0 0 3px var(--basic-white),
-		0 0 0 6px var(--basic-red-hover);
+		0 0 0 6px var(--basic-red);
 }
 .social a:active {
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
