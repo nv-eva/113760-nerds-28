@@ -55,6 +55,9 @@
   --basic-gray-social: #e1e1e1;
   --basic-gray-slider: #c1c1c1;
 
+  --basic-gray-shadow:#bfbfbf;
+  --basic-gray-border: #e6e6e6;
+
   --basic-gray-text: #666666;
   --basic-black-text: #283136;
   --basic-form-value: #444444;
@@ -206,6 +209,34 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   color: var(--basic-black);
+}
+
+.items li {
+  width: 358px;
+  height: 750px; /* заменить на 578px */
+  border: 1px solid var(--basic-gray-border);
+  border-radius: 5px;
+}
+
+.items li:hover {
+  border: none;
+  box-shadow: 0px 6px 15px var(--basic-gray-shadow);
+}
+
+.item-text {
+  line-height: 18px;
+  text-align: center;
+  color: var(--basic-gray-text);
+  background-color: var(--basic-gray);
+}
+
+.item-text h3 {
+  color: var(--basic-black);
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 20px;
 }
 
 /* Button */
