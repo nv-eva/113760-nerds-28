@@ -92,6 +92,16 @@ body {
   background-color: var(--basic-white);
 }
 
+h1 {
+  margin: 0;
+  padding-top: 75px;
+  padding-bottom: 108px;
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  background-color: var(--basic-gray);
+}
+
 a {
   text-decoration: none;
 }
@@ -153,7 +163,7 @@ a {
   color: var(--basic-black);
   font-size: 24px;
   line-height: 30px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   margin-top: 20px;
 }
@@ -261,7 +271,7 @@ a {
 .social .call-to-action {
   font-size: 36px;
   line-height: 36px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .social-icon {
