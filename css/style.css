@@ -303,11 +303,17 @@ a {
   font-weight: 700;
 }
 
+.social a {
+  width: 81px;
+  height: 81px;
+  display: block;
+  border-radius: 50%;
+  background-color: var(--basic-gray-social);
+}
+
 .social-icon {
   width: 81px;
   height: 81px;
-  border-radius: 50%;
-  background-color: var(--basic-gray-social);
   background-image: url(../img/icons.svg);
   background-repeat: no-repeat;
   background-size: 300px auto;
@@ -321,4 +327,22 @@ a {
 }
 .social-icon-insta {
   background-position: -209px -10px;
+}
+
+.social a:hover,
+.social a:focus {
+  background-color: var(--basic-red-hover);
+}
+.social a:focus {
+	outline: none;
+	box-shadow:
+		0 0 0 3px var(--basic-white),
+		0 0 0 6px var(--basic-red-hover);
+}
+.social a:active {
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  background-color: var(--basic-red-active);
+}
+a:active .social-icon {
+  opacity: 0.3;
 }
