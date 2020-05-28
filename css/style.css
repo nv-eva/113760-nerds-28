@@ -46,14 +46,14 @@
   --basic-yellow-hover: #eab534;
   --basic-yellow-active: #e5a722;
 
-  --basic-grey: #eeeeee;
-  --basic-grey-hover: #dfdfdf;
-  --basic-grey-active: #d5d5d5;
+  --basic-gray: #eeeeee;
+  --basic-gray-hover: #dfdfdf;
+  --basic-gray-active: #d5d5d5;
 
   --basic-form-icon: #4d4d4d;
-  --basic-grey-icon: #a6a6a6;
-  --basic-grey-social: #e1e1e1;
-  --basic-grey-slider: #c1c1c1;
+  --basic-gray-icon: #a6a6a6;
+  --basic-gray-social: #e1e1e1;
+  --basic-gray-slider: #c1c1c1;
 
   --basic-gray-text: #666666;
   --basic-black-text: #283136;
@@ -113,14 +113,14 @@ li {
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-black);
-  background-color: var(--basic-grey);
+  background-color: var(--basic-gray);
  }
 
 .container {
   background-color: transparent;
  }
 
-.main-menu a {
+a {
     color: var(--basic-black);
   }
 
@@ -144,15 +144,7 @@ li {
 }
 
 .main-menu-logo:not(.menu-active):active svg {
-  fill: var(--basic-grey-icon);
-}
-
-.menu-cart {
-  position: relative;
-}
-
-.menu-cart a {
-  padding-left: 40px;
+  fill: var(--basic-gray-icon);
 }
 
 /* Services */
@@ -161,6 +153,7 @@ li {
   color: var(--basic-black);
   font-size: 24px;
   line-height: 30px;
+  font-weight: bold;
   text-transform: uppercase;
   margin-top: 20px;
 }
@@ -200,6 +193,7 @@ li {
 
 .button {
   font: inherit;
+  font-weight: medium;
   line-height: 18px;
   text-align: center;
   vertical-align: middle;
@@ -255,4 +249,40 @@ li {
 }
 .button-yellow:active {
   background-color: var(--basic-yellow-active);
+}
+
+/* Main footer */
+
+.main-footer {
+  line-height: 22x;
+  color: var(--basic-form-value);
+  background-color: var(--basic-white);
+}
+
+/* Social */
+
+.social .call-to-action {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.social-icon {
+  width: 81px;
+  height: 81px;
+  border-radius: 50%;
+  background-color: var(--basic-gray-social);
+  background-image: url(../img/icons.svg);
+  background-repeat: no-repeat;
+  background-size: 300px auto;
+}
+
+.social-icon-vk {
+  background-position: -10px -10px;
+}
+.social-icon-fb {
+  background-position: -109px -8px;
+}
+.social-icon-insta {
+  background-position: -209px -10px;
 }
