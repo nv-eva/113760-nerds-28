@@ -36,19 +36,19 @@
 
   --basic-red: #fb565a;
   --basic-red-hover: #e74246;
-  --basic-red-press: #d73738;
+  --basic-red-active: #d73738;
 
   --basic-green: #00ca74;
   --basic-green-hover: #00bc6c;
-  --basic-green-press: #00aa62;
+  --basic-green-active: #00aa62;
 
   --basic-yellow: #efc84a;
   --basic-yellow-hover: #eab534;
-  --basic-yellow-press: #e5a722;
+  --basic-yellow-active: #e5a722;
 
   --basic-grey: #eeeeee;
   --basic-grey-hover: #dfdfdf;
-  --basic-grey-press: #d5d5d5;
+  --basic-grey-active: #d5d5d5;
 
   --basic-form-icon: #4d4d4d;
   --basic-grey-icon: #a6a6a6;
@@ -120,7 +120,7 @@ li {
   background-color: transparent;
  }
 
- .main-menu a {
+.main-menu a {
     color: var(--basic-black);
   }
 
@@ -133,8 +133,9 @@ li {
    color: var(--basic-red);
  }
 
- .main-menu a:not(.menu-active):focus {
+.main-menu a:not(.menu-active):focus {
    outline-color: var(--basic-red);
+   outline-width: 3px;
  }
 
 .main-menu a:not(.menu-active):not(.main-menu-logo):active {
@@ -163,7 +164,7 @@ li {
   text-transform: uppercase;
   margin-top: 20px;
 }
-
+/*
 .services li {
   position: relative;
 }
@@ -192,4 +193,66 @@ li {
 .service-3 h3::before {
   background-color: var(--basic-yellow);
   background-image: url(../img/service-3.jpg);
+}
+*/
+
+/* Button */
+
+.button {
+  font: inherit;
+  line-height: 18px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  border: none;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-red {
+  background-color: var(--basic-red);
+}
+.button-red:hover,
+.button-red:focus {
+  background-color: var(--basic-red-hover);
+}
+.button-red:focus {
+  outline-color: var(--basic-red-active);
+  outline-width: 3px;
+}
+.button-red:active {
+  background-color: var(--basic-red-active);
+}
+
+.button-green {
+  background-color: var(--basic-green);
+}
+.button-green:hover,
+.button-green:focus {
+  background-color: var(--basic-green-hover);
+}
+.button-green:focus {
+  outline-color: var(--basic-green-active);
+  outline-width: 3px;
+}
+.button-green:active {
+  background-color: var(--basic-green-active);
+}
+
+.button-yellow {
+  background-color: var(--basic-yellow);
+}
+.button-yellow:hover,
+.button-yellow:focus {
+  background-color: var(--basic-yellow-hover);
+}
+.button-yellow:focus {
+  outline-color: var(--basic-yellow-active);
+  outline-width: 3px;
+}
+.button-yellow:active {
+  background-color: var(--basic-yellow-active);
 }
