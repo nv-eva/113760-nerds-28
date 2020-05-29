@@ -111,17 +111,13 @@ h1 {
 
 a {
   text-decoration: none;
+  color: var(--basic-black);
 }
 
 img {
   max-width: 100%;
   height: auto;
 }
-
-li {
-  list-style: none;
-  margin-left: -40px;
- }
 
 /* Main navigation */
 
@@ -131,14 +127,22 @@ li {
   text-transform: uppercase;
   color: var(--basic-black);
   background-color: var(--basic-gray);
- }
+}
 
 .container {
   background-color: transparent;
- }
+}
 
-a {
-  color: var(--basic-black);
+.main-menu-logo {
+  display: block;
+  width: 160px;
+  height: 65px;
+}
+
+.main-menu li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .main-menu a:not([href]):not(.main-menu-logo) {
@@ -150,7 +154,7 @@ a {
   color: var(--basic-red);
 }
 
-.main-menu a:not(.main-menu-logo):focus {
+.main-menu a:focus {
   outline: none;
   box-shadow:
     0 0 0 3px var(--basic-gray),
@@ -178,6 +182,9 @@ a {
 }
 
 .services li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .services h3::before {
@@ -207,6 +214,12 @@ a {
 
 /* Catalog */
 
+.filter li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 .filter legend {
   font-size: 18px;
   line-height: 30px;
@@ -218,8 +231,12 @@ a {
 .items li {
   width: 358px;
   height: 750px; /* заменить на 578px */
+  padding: 0;
+  margin: 0;
   border: 1px solid var(--basic-gray-border);
-  border-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  list-style: none;
 }
 
 .items li:hover {
@@ -335,17 +352,17 @@ a {
 /* Main footer */
 
 .main-footer {
-  line-height: 22x;
+  line-height: 22px;
   color: var(--basic-form-value);
   background-color: var(--basic-white);
 }
 
 /* Social */
 
-.social .call-to-action {
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: bold;
+.social li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .social a {
@@ -390,4 +407,10 @@ a {
 }
 a:active .social-icon {
   opacity: 0.3;
+}
+
+.social .call-to-action {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
 }
