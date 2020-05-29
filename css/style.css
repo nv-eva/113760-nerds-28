@@ -66,6 +66,10 @@
   --basic-form-hover: #b4b9bb;
   --basic-form-scale: #d7dcdf;
   --basic-form-range: #ababab;
+
+  --basic-white-opacity: rgba(255, 255, 255, 0.3);
+  --basic-black-opacity: rgba(0, 0, 0, 0.3);
+  --basic-box-shadow: rgba(0, 1, 1, 0.1);
 }
 
 /* Hidden */
@@ -75,8 +79,8 @@
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
+  border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -90,7 +94,7 @@ body {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: normal;
   color: var(--basic-black-text);
   background-color: var(--basic-white);
 }
@@ -101,7 +105,7 @@ h1 {
   padding-bottom: 108px;
   font-size: 55px;
   line-height: 55px;
-  font-weight: 500;
+  font-weight: medium;
   background-color: var(--basic-gray);
 }
 
@@ -134,24 +138,24 @@ li {
  }
 
 a {
-    color: var(--basic-black);
-  }
+  color: var(--basic-black);
+}
 
 .main-menu a:not([href]):not(.main-menu-logo) {
-    border-bottom: 2px solid var(--basic-red);
-  }
+  border-bottom: 2px solid var(--basic-red);
+}
 
 .main-menu a:not(.menu-active):hover,
 .main-menu a:not(.menu-active):focus {
-   color: var(--basic-red);
- }
+  color: var(--basic-red);
+}
 
 .main-menu a:not(.main-menu-logo):focus {
   outline: none;
   box-shadow:
     0 0 0 3px var(--basic-gray),
     0 0 0 6px var(--basic-red);
- }
+}
 
 .main-menu a:not(.menu-active):not(.main-menu-logo):active {
   color: var(--basic-black);
@@ -165,12 +169,12 @@ a {
 /* Services */
 
 .services h3 {
-  color: var(--basic-black);
+  margin-top: 20px;
   font-size: 24px;
   line-height: 30px;
-  font-weight: 700;
+  font-weight: bold;
   text-transform: uppercase;
-  margin-top: 20px;
+  color: var(--basic-black);
 }
 
 .services li {
@@ -206,7 +210,7 @@ a {
 .filter legend {
   font-size: 18px;
   line-height: 30px;
-  font-weight: 700;
+  font-weight: bold;
   text-transform: uppercase;
   color: var(--basic-black);
 }
@@ -231,31 +235,31 @@ a {
 }
 
 .item-text h3 {
-  color: var(--basic-black);
+  margin-top: 20px;
   font-size: 18px;
   line-height: 30px;
-  font-weight: 700;
+  font-weight: bold;
   text-transform: uppercase;
-  margin-top: 20px;
+  color: var(--basic-black);
 }
 
 /* Button */
 
 .button {
-  font: inherit;
-  font-weight: medium;
-  line-height: 18px;
-  text-align: center;
-  vertical-align: middle;
-  text-transform: uppercase;
-  color: var(--basic-white);
   border: none;
   border-radius: 3px;
+  font: inherit;
+  line-height: 18px;
+  font-weight: medium;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  color: var(--basic-white);
 }
 
 .button:active {
-  color: rgba(255, 255, 255, 0.3);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  color: var(--basic-white-opacity);
+  box-shadow: inset 0px 3px 0px var(--basic-box-shadow);
 }
 
 .button-red {
@@ -324,7 +328,7 @@ a {
     0 0 0 6px var(--basic-gray-hover);
 }
 .button-gray:active {
-  color: rgba(0, 0, 0, 0.3);
+  color: var(--basic-black-opacity);
   background-color: var(--basic-gray-active);
 }
 
@@ -341,13 +345,13 @@ a {
 .social .call-to-action {
   font-size: 36px;
   line-height: 36px;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 .social a {
+  display: block;
   width: 81px;
   height: 81px;
-  display: block;
   border-radius: 50%;
   background-color: var(--basic-gray-social);
 }
@@ -381,7 +385,7 @@ a {
 		0 0 0 6px var(--basic-red);
 }
 .social a:active {
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--basic-box-shadow);
   background-color: var(--basic-red-active);
 }
 a:active .social-icon {
