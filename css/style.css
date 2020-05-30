@@ -154,7 +154,7 @@ img {
   color: var(--basic-red);
 }
 
-.main-menu a:focus {
+.main-menu a:not(:active):focus {
   outline: none;
   box-shadow:
     0 0 0 3px var(--basic-gray),
