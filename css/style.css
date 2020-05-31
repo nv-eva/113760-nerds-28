@@ -70,6 +70,7 @@
   --basic-white-opacity: rgba(255, 255, 255, 0.3);
   --basic-black-opacity: rgba(0, 0, 0, 0.3);
   --basic-box-shadow: rgba(0, 1, 1, 0.1);
+  --form-value-opacity: rgba(68, 68, 68, 0.5); /* #444444 */
 }
 
 /* Hidden */
@@ -170,6 +171,53 @@ img {
   fill: var(--basic-gray-icon);
 }
 
+/* Slider */
+
+.slider {
+  background-color: var(--basic-gray);
+}
+
+.slider li {
+  list-style: none;
+}
+
+.slider-title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: medium;
+  color: var(--basic-black);
+}
+
+.slide {
+  display: block;
+  width: 1157px;
+  min-height: 431px;
+  background-repeat: no-repeat;
+  background-size: 760px 431px;
+  background-position: right bottom;
+}
+
+.slide-1 {
+  background-image: url(../img/nerds-index-slide-1.jpg);
+}
+
+.slide-2 {
+  background-image: url(../img/nerds-index-slide-2.jpg);
+}
+
+.slide-3 {
+  background-image: url(../img/nerds-index-slide-3.jpg);
+}
+
+.slider-controls button {
+  width: 18px;
+  height: 18px;
+  border: none;
+  border-radius: 50%;
+  font-size: 0;
+  background-color: var(--basic-white);
+}
+
 /* Services */
 
 .services h3 {
@@ -210,6 +258,72 @@ img {
 .service-3 h3::before {
   background-color: var(--basic-yellow);
   background-image: url(../img/service-3.jpg);
+}
+
+/* About */
+
+.about .about-slogan {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: medium;
+  color: var(--basic-black);
+}
+
+.about .about-title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.about li {
+  list-style: none;
+}
+.statistics-title {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.about-statistics table {
+  text-align: left;
+}
+
+.about-statistics th {
+  line-height: 18px;
+  font-weight: normal;
+}
+
+.about-statistics td {
+  font-size: 45px;
+  line-height: 64px;
+  font-weight: bold;
+}
+
+.about-statistics .statistics-unit {
+  font-size: 26px;
+  line-height: 40px;
+}
+
+/* Companies */
+
+.companies li {
+  list-style: none;
+}
+
+.companies a {
+  opacity: 0.2;
+}
+
+.companies a:hover,
+.companies a:focus {
+  opacity: 1;
+}
+
+.companies a:not(:active):focus {
+  outline: 3px solid var(--basic-red);
+}
+
+.companies a:active {
+  opacity: 0.1;
 }
 
 /* Catalog */
@@ -357,6 +471,19 @@ img {
   background-color: var(--basic-white);
 }
 
+.contacts {
+  line-height: 18px;
+  color: var(--basic-gray-text);
+}
+
+.contacts .contacts-title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
 /* Social */
 
 .social li {
@@ -413,4 +540,40 @@ a:active .social-icon {
   font-size: 36px;
   line-height: 36px;
   font-weight: bold;
+}
+
+/* Feedback */
+
+.feedback {
+  line-height: 18px;
+  font-weight: bold;
+  color: var(--basic-black);
+}
+
+.feedback h2 {
+  font-size: 45px;
+  line-height: 50px; /* в макете значение auto */
+}
+
+.feedback-form-area {
+  border: 2px solid var(--basic-form);
+  border-radius: 3px;
+  font: inherit;
+  font-weight: normal;
+  color: var(--form-value-opacity);
+}
+
+.feedback-form-area:hover {
+  border-color: var(--basic-form-hover);
+}
+
+.feedback-form-area:focus {
+  border-color: var(--basic-black);
+  outline: none;
+  color: var(--basic-form-value);
+}
+
+.feedback-form-area:not(:focus):invalid {
+  border-color: var(--basic-red-hover);
+  color: var(--basic-red-hover);
 }
