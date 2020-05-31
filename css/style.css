@@ -57,6 +57,7 @@
 
   --basic-gray-shadow:#bfbfbf;
   --basic-gray-border: #e6e6e6;
+  --basic-gray-border-2: #dbdbdb;
 
   --basic-gray-text: #666666;
   --basic-black-text: #283136;
@@ -329,8 +330,6 @@ img {
 /* Catalog */
 
 .filter li {
-  padding: 0;
-  margin: 0;
   list-style: none;
 }
 
@@ -342,7 +341,50 @@ img {
   color: var(--basic-black);
 }
 
-.items li {
+.filter-cost p {
+  line-height: 22px;
+}
+
+.filter-cost output {
+  text-align: center;
+  color: var(--basic-gray-text);
+  background-color: var(--basic-gray);
+}
+
+.filter-sort label {
+  border: none;
+  text-transform: uppercase;
+  color: var(--basic-black-opacity);
+  background-color: var(--basic-white);
+}
+
+.filter-sort input:checked {
+  color: var(--basic-black);
+}
+
+.filter-sort .sort-icon {
+  display: inline-block;
+  width: 11px;
+  height: 10px;
+  font-size: 0;
+  opacity: 0.1;
+  background-image: url(../img/icons.svg);
+  background-repeat: no-repeat;
+  background-size: 300px auto;
+}
+
+.sort-icon-tb {
+  background-position: -144px -246px;
+}
+.sort-icon-bt {
+  background-position: -45px -243px;
+}
+
+.filter-sort .sort-icon:checked {
+  opacity: 1;
+}
+
+.items li.item {
   width: 358px;
   height: 750px; /* заменить на 578px */
   padding: 0;
@@ -353,7 +395,7 @@ img {
   list-style: none;
 }
 
-.items li:hover {
+.items .item:hover {
   border: none;
   box-shadow: 0px 6px 15px var(--basic-gray-shadow);
 }
@@ -461,6 +503,14 @@ img {
 .button-gray:active {
   color: var(--basic-black-opacity);
   background-color: var(--basic-gray-active);
+}
+.button-gray:not([href]) {
+  border: 3px solid var(--basic-gray-border-2);
+  background-color: var(--basic-white);
+}
+
+.pagination-list li {
+  list-style: none;
 }
 
 /* Main footer */

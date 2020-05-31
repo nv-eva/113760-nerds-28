@@ -100,7 +100,7 @@
         <h2 class="visually-hidden">Контактная информация</h2>
         <img src="img/map-with-marker.jpg" width="1440" height="416" alt="nёrd's на карте">
         <div>
-          <p><strong>NЁRDS DESIGN STUDIO</strong></p>
+          <p class="contacts-title"><strong>NЁRDS DESIGN STUDIO</strong></p>
           <p>
             191186, Санкт-Петербург,<br>
             ул. Б. Конюшенная, д. 19/8
@@ -108,7 +108,7 @@
           <p>
             тел. +7 (812) 275-75-75
           </p>
-          <a href="feedback.html">Напишите нам</a>
+          <a href="feedback.html" class="button button-red">Напишите нам</a>
         </div>
       </section>
 
@@ -140,21 +140,21 @@
     </footer>
 
     <section class="feedback">
-      <h2 class="visually-hidden">Напишите нам</h2>
+      <h2>Напишите нам</h2>
       <form name="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label for="feedback-form-name">Ваше имя:</label><br>
-          <input id="feedback-form-name" type="text" name="name" placeholder="Имя Фамилия" required>
+          <input id="feedback-form-name" class="feedback-form-area" type="text" name="name" placeholder="Имя Фамилия" required>
         </p>
         <p>
           <label for="feedback-form-email">Ваш email:</label><br>
-          <input id="feedback-form-email" type="email" name="email" placeholder="email@example.com" required>
+          <input id="feedback-form-email" class="feedback-form-area" type="email" name="email" placeholder="email@example.com" required>
         </p>
         <p>
           <label for="feedback-form-message">Текст письма:</label><br>
-          <textarea id="feedback-form-message" name="message" rows="4" required>В свободной форме</textarea>
+          <textarea id="feedback-form-message" class="feedback-form-area" name="message" rows="4" required>В свободной форме</textarea>
         </p>
-        <button type="submit">Отправить</button>
+        <button type="submit" class="button button-red">Отправить</button>
       </form>
     </section>
 
