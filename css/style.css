@@ -504,13 +504,14 @@ img {
   color: var(--basic-black-opacity);
   background-color: var(--basic-gray-active);
 }
-.button-gray:not([href]) {
-  border: 3px solid var(--basic-gray-border-2);
-  background-color: var(--basic-white);
-}
 
 .pagination-list li {
   list-style: none;
+}
+
+.pagination-list .button-gray:not([href]) {
+  border: 3px solid var(--basic-gray-border-2);
+  background-color: var(--basic-white);
 }
 
 /* Main footer */
