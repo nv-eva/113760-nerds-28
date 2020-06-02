@@ -36,11 +36,24 @@
         <form action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="filter-cost">
             <legend>Стоимость:</legend>
-            <input type="range"> <!-- временный фильтр-->
-            <p>
-              <label>от <output name="min">0</output></label>
-              <label>до <output name="max">15 000</output></label>
-            </p>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="width: 70%; margin-left: 0"></div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0" style="left: 0"></div>
+                <div class="toggle toggle-max" tabindex="0" style="left: 63%"></div>
+              </div>
+
+              <div class="price-controls">
+                <label class="min-price">
+                  от <input type="number" name="min-price" step="100" value="0">
+                </label>
+                <label class="max-price">
+                  до <input type="number" name="max-price" step="100" value="15000">
+                </label>
+              </div>
+            </div>
           </fieldset>
 
           <fieldset class="filter-gride">
