@@ -624,7 +624,7 @@ a:active .social-icon {
   color: var(--basic-form-value);
 }
 
-.feedback-form-area:not(:focus):invalid {
+.feedback-form-area:invalid {
   border-color: var(--basic-red-hover);
   color: var(--basic-red-hover);
 }
