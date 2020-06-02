@@ -89,37 +89,33 @@
 
           <button type="submit" class="button button-gray">Показать</button>
         </form>
+      </section>
 
-        <form action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="filter-sort">
-            <legend>Сортировать:</legend>
-            <ul>
-              <li>
-                <input type="radio" name="sort-type" value="price" id="filter-sort-price" checked>
-                <label for="filter-sort-price">По цене</label>
-              </li>
-              <li>
-                <input type="radio" name="sort-type" value="type" id="filter-sort-type">
-                <label for="filter-sort-type">По типу</label>
-              </li>
-              <li>
-                <input type="radio" name="sort-type" value="name" id="filter-sort-name">
-                <label for="filter-sort-name">По названию</label>
-              </li>
-            </ul>
-
-            <ul>
-              <li>
-                <input type="radio" name="sort-direction" value="tb" id="filter-top-bottom" checked>
-                <label for="filter-top-bottom" class="sort-icon sort-icon-tb">Сверху вниз</label>
-              </li>
-              <li>
-                <input type="radio" name="sort-direction" value="bt" id="filter-bottom-top">
-                <label for="filter-bottom-top" class="sort-icon sort-icon-bt">Снизу вверх</label>
-              </li>
-            </ul>
-          </fieldset>
-        </form>
+      <section class="filter-sort">
+        <h3>Сортировать:</h3>
+        <ul>
+          <li>
+           <button type="button" class="sort sort-price sort-active">По цене</button>
+          </li>
+          <li>
+            <button type="button" class="sort sort-type">По типу</button>
+          </li>
+          <li>
+            <button type="button" class="sort sort-name">По названию</button>
+          </li>
+        </ul>
+        <button type="button" class="sort-icon icon-down-dir sort-icon-active">
+          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+            <path d="M5.5 10L0 0h11"/>
+          </svg>
+          Сверху вниз
+        </button>
+        <button type="button" class="sort-icon icon-down-dir">
+          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+            <path d="M5.5 0L0 10h11z"/>
+          </svg>
+          Снизу вверх
+        </button>
       </section>
 
       <section class="items">
