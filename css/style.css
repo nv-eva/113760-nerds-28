@@ -466,22 +466,148 @@ img {
   opacity: 1;
 }
 
-.items li.item {
+.items .item {
   width: 358px;
-  height: 750px; /* заменить на 578px */
-  padding: 0;
-  margin: 0;
+  height: 818px;
+  margin-bottom: 30px;
   border: 1px solid var(--basic-gray-border);
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-radius: 5px;
+  background-color: var(--basic-gray);
   list-style: none;
+  overflow: hidden;
 }
 
 .items .item:hover {
+  width: 360px;
+  height: 820px;
   border: none;
   box-shadow: 0px 6px 15px var(--basic-gray-shadow);
 }
 
+.item-image::before {
+  content: "";
+  display: block;
+  width: 360px;
+  height: 39px;
+  background-color: var(--basic-form-icon);
+  opacity: 0.12;
+}
+
+.item:hover .item-image::before {
+  height: 40px;
+  opacity: 1;
+}
+
+.item:hover img {
+  width: 360px;
+  height: auto;
+}
+
+
+/*
+.item-image {
+  width: 358px;
+  height: 578px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+
+  list-style: none;
+}
+
+.item-image:hover {
+  width: 360px;
+  height: 560px;
+  border: none;
+}
+
+
+
+.item:hover .item-image::before {
+  opacity: 1;
+}
+
+.item-image:hover img {
+  width: 360px;
+  height: 560px;
+}
+*/
+/*
+
+
+
+.item-image::before {
+  content: "";
+  display: block;
+  height: 40px;
+  background-color: var(--basic-form-icon);
+  opacity: 0.12;
+}
+
+.item::before {
+  content: "";
+  display: block;
+  width: 360px;
+  height: 40px;
+  background-color: var(--basic-form-icon);
+  opacity: 0.12;
+}
+
+.items .item:hover {
+  border: none;
+  width: 360px;
+  box-shadow: 0px 6px 15px var(--basic-gray-shadow);
+}
+
+.item:hover .image::before {
+  opacity: 1;
+}
+
+.item:hover img {
+  width: 360px;
+}
+
+
+.items .item {
+  width: 360px;
+  height: 750px;
+  padding: 0;
+  margin-bottom: 50px;
+  outline: 1px solid var(--basic-gray-border);
+  outline-offset: -1px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  list-style: none;
+  overflow: hidden;
+}
+
+.item-image {
+  overflow: hidden;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.item-image:hover {
+  outline: none;
+  box-shadow: 0px 6px 15px var(--basic-gray-shadow);
+}
+
+.item-image::before {
+  content: "";
+  display: block;
+  width: 360px;
+  height: 40px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: var(--basic-form-icon);
+  opacity: 0.12;
+}
+
+.item:hover .item-image::before {
+  opacity: 1;
+}
+
+*/
 .item-text {
   line-height: 18px;
   text-align: center;
