@@ -272,8 +272,22 @@ img {
 
 /* Services */
 
-.services h3 {
-  margin-top: 20px;
+.services {
+  border-bottom: 2px solid var(--basic-gray);
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 100px;
+  margin-top: 80px;
+  margin-bottom: 78px;
+  padding: 0;
+  list-style: none;
+}
+
+.service h3 {
+  margin: 0;
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
@@ -281,18 +295,20 @@ img {
   color: var(--basic-black);
 }
 
-.services-list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+.service p {
+  padding-right: 18px;
 }
-/*
-.services h3::before {
+
+.service-3 {
+  margin-right: 60px;
+}
+
+.service h3::before {
   content: "";
-  position: absolute;
-  left: 540px;
+  display: block;
   width: 300px;
   height: 146px;
+  margin-bottom: 20px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -311,7 +327,7 @@ img {
   background-color: var(--basic-yellow);
   background-image: url(../img/service-3.jpg);
 }
-*/
+
 /* About */
 
 .about .about-slogan {
