@@ -29,7 +29,7 @@
       <div class="background-gray">
         <h1>Магазин готовых шаблонов</h1>
       </div>
-      
+
       <section>
         <h2>Форма для покупки</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
@@ -94,7 +94,7 @@
 
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <section class="contacts">
         <h2 class="visually-hidden">Контактная информация</h2>
         <img src="img/map-with-marker.jpg" width="1440" height="416" alt="nёrd's на карте">
@@ -112,8 +112,13 @@
       </section>
 
       <section class="social">
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <ul>
+        <div class="social-text">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <p class="call-to-action"><strong>Давайте дружить, это выгодно!</strong></p>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+
+        <ul class="social-icons">
           <li>
             <a href="#">
               <div class="social-icon social-icon-vk"></div>
@@ -133,12 +138,10 @@
             </a>
           </li>
         </ul>
-        <p class="call-to-action"><strong>Давайте дружить, это выгодно!</strong></p>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
       </section>
     </footer>
 
-    <section class="feedback">
+    <section class="feedback visually-hidden">
       <h2>Напишите нам</h2>
       <form name="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <p>

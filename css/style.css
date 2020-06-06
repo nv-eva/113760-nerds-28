@@ -402,19 +402,33 @@ img {
 
 /* Catalog */
 
-.filter li,
-.filter-sort li {
-  list-style: none;
+.page-catalog {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: auto auto;
+  align-content: start;
+  column-gap: 100px;
+  padding-top: 50px;
 }
 
-.filter fieldset {
+/* Filters */
+
+.filters {
+  grid-row: 1 / 3;
+  width: 260px;
+}
+
+.filters fieldset {
   margin: 0;
   padding: 0;
+  margin-bottom: 40px;
   border: none;
 }
 
-.filter legend,
+.filters legend,
 .filter-sort h3 {
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
@@ -422,9 +436,31 @@ img {
   color: var(--basic-black);
 }
 
+.filter-gride legend,
+.filter-features legend {
+  margin-bottom: 12px;
+}
+
+.filters ul,
+.filter-sort ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.filters li {
+  margin-bottom: 12px;
+}
+
+.filters li:last-child {
+  margin-bottom: 0;
+}
+
+/* Filter cost */
+
 .range-filter {
   width: 260px;
-/*  margin-top: 49px; */
+  margin-top: 49px;
 }
 
 .range-controls {
@@ -494,6 +530,11 @@ img {
   background-color: var(--basic-gray);
 }
 
+/* Filters radio */
+
+
+/* Filter sort */
+
 .filter-sort .sort {
   border: none;
   font: inherit;
@@ -536,6 +577,23 @@ img {
   opacity: 1;
 }
 
+
+/* Catalog items*/
+
+.items {
+
+}
+
+.catalog-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 55px;
+  list-style: none;
+}
+
 .items .item {
   width: 358px;
   height: 818px;
@@ -543,7 +601,6 @@ img {
   border: 1px solid var(--basic-gray-border);
   border-radius: 5px;
   background-color: var(--basic-gray);
-  list-style: none;
   overflow: hidden;
 }
 
@@ -682,7 +739,9 @@ img {
   box-shadow: none;
 }
 
-.pagination-list li {
+.pagination-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
