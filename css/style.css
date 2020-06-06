@@ -92,13 +92,15 @@ body {
 }
 
 h1 {
-  margin: 0;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
   padding-top: 75px;
   padding-bottom: 108px;
   font-size: 55px;
   line-height: 55px;
   font-weight: medium;
-  background-color: var(--basic-gray);
+  text-align: center;
 }
 
 a {
@@ -140,7 +142,11 @@ img {
 .container {
   width: 1160px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 20px;
+}
+
+.background-gray {
+  background-color: var(--basic-gray);
 }
 
 /* Main menu */
