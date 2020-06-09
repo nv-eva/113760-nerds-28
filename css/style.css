@@ -287,13 +287,21 @@ img {
 }
 
 .services-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 100px;
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 80px;
-  margin-bottom: 78px;
   padding: 0;
   list-style: none;
+}
+
+.services-list .service {
+  width: 300px;
+  margin-right: 100px;
+  margin-bottom: 78px;
+}
+
+.services-list .service:nth-child(3n){
+  margin-right: 0;
 }
 
 .service h3 {
