@@ -79,6 +79,10 @@
 
 /* Global */
 
+html {
+  height: 100%;
+}
+
 body {
   min-width: 1200px;
   margin: 0;
@@ -127,10 +131,6 @@ img {
 }
 
 /* Grid */
-
-.page {
-  height: 100%;
-}
 
 .page-body {
   display: grid;
