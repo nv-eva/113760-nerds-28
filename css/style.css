@@ -149,6 +149,14 @@ img {
   background-color: var(--basic-gray);
 }
 
+.gray-line::after {
+  content: "";
+  display: block;
+  width: 1158px;
+  height: 2px;
+  background-color: var(--basic-gray);
+}
+
 /* Main menu */
 
 .main-header {
@@ -399,14 +407,6 @@ img {
   flex-wrap: wrap;
 }
 
-.about::before,
-.about::after {
-  content: "";
-  width: 1158px;
-  height: 2px;
-  background-color: var(--basic-gray);
-}
-
 /* About text */
 
 .about-text {
@@ -483,8 +483,52 @@ img {
 
 /* Companies */
 
-.companies li {
+.companies {
+  padding-bottom: 80px;
+}
+
+.companies-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
   list-style: none;
+}
+
+.companies-list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 260px;
+  height: 100px;
+  margin-bottom: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.companies-list li:nth-child(5n),
+.companies-list li:first-child {
+  margin-left: 0;
+}
+
+.companies-list li:nth-child(4n),
+.companies-list li:last-child {
+  margin-right: 0;
+}
+
+.companies-list li:not(:nth-child(4n)):not(:last-child)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -20px;
+  width: 2px;
+  height: 52px;
+  background-color: var(--basic-gray);
 }
 
 .companies a {
