@@ -331,10 +331,6 @@ img {
 
 /* Services */
 
-.services {
-  border-bottom: 2px solid var(--basic-gray);
-}
-
 .services-list {
   display: flex;
   flex-wrap: wrap;
@@ -397,28 +393,75 @@ img {
 
 /* About */
 
-.about .about-slogan {
+.about {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about::before,
+.about::after {
+  content: "";
+  width: 1158px;
+  height: 2px;
+  background-color: var(--basic-gray);
+}
+
+/* About text */
+
+.about-text {
+  width: 660px;
+  margin-right: 140px;
+  padding-bottom: 70px;
+}
+
+.about-text .about-slogan {
+  margin: 0;
+  margin-top: 70px;
+  margin-bottom: 30px;
   font-size: 45px;
   line-height: 45px;
   font-weight: medium;
   color: var(--basic-black);
 }
 
-.about .about-title {
+.about-text .about-title {
+  margin-top: 40px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.about li {
+.about-text-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
+
+.about-text-list  li {
+  margin-bottom: 15px;
+}
+
+/* About statistics */
+
+.about-statistics {
+  width: 360px;
+  padding-bottom: 75px;
+}
+
+.color-logo {
+  margin-top: 39px;
+}
+
 .statistics-title {
   font-weight: bold;
   text-transform: uppercase;
+  text-align: center;
   color: var(--basic-black);
 }
 
 .about-statistics table {
+  width: 100%;
+  border-collapse: collapse;
   text-align: left;
 }
 
