@@ -683,6 +683,30 @@ img {
 
 /* Filter sort */
 
+.filter-sort {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 48px;
+}
+
+.filter-sort-list {
+  display: flex;
+}
+
+.sort-list-type,
+.sort-list-icons {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.filter-sort-list li {
+  margin-right: 20px;
+}
+
 .filter-sort .sort {
   border: none;
   font: inherit;
