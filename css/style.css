@@ -1100,22 +1100,50 @@ a:active .social-icon {
 /* Feedback */
 
 .feedback {
+  width: 760px;
+  margin: auto;
+  padding: 0 100px;
+  padding-top: 20px;
+  padding-bottom: 80px;
   line-height: 18px;
   font-weight: bold;
   color: var(--basic-black);
+  background-color: var(--basic-white);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
 }
 
 .feedback h2 {
   font-size: 45px;
-  line-height: 50px; /* в макете значение auto */
+  line-height: 50px;
 }
 
+.feedback-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.feedback-form-name,
+.feedback-form-email,
 .feedback-form-area {
+  margin-top: 10px;
+  padding: 15px;
   border: 2px solid var(--basic-form);
   border-radius: 3px;
   font: inherit;
   font-weight: normal;
   color: var(--form-value-opacity);
+}
+
+.feedback-form-name,
+.feedback-form-email {
+  width: 326px;
+  height: 16px;
+}
+
+.feedback-form-area {
+  width: 726px;
 }
 
 .feedback-form-area:hover {
