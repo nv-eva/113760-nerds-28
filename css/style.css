@@ -906,17 +906,60 @@ img {
   background-color: var(--basic-white);
 }
 
+/* Contacts */
+
 .contacts {
+  position: relative;
+  margin: 0;
+  padding: 0;
   line-height: 18px;
   color: var(--basic-gray-text);
 }
 
+.map-container {
+  text-align: center;
+  background-color: var(--basic-gray);
+}
+
+.map-container img {
+  margin-bottom: -4px;
+}
+
+.contacts-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 50%;
+  top: 50%;
+  margin-left: -600px;
+  margin-top: -208px;
+  height: 416px;
+  vertical-align: middle;
+}
+
+.contacts-popup {
+  display: block;
+  width: 219px;
+  min-height: 180px;
+  max-height: 340px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 60px;
+  border-top: 1px solid var(--basic-white);
+  background-color: var(--basic-white);
+}
+
 .contacts .contacts-title {
+  margin-top: 40px;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
   color: var(--basic-black);
+}
+
+.contacts-phone {
+  margin-bottom: 30px;
 }
 
 /* Social */
