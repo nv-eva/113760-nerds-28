@@ -411,7 +411,7 @@ img {
 
 .about-text {
   width: 660px;
-  margin-right: 140px;
+  justify-content: space-between;
   padding-bottom: 70px;
 }
 
