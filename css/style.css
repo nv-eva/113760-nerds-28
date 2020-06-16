@@ -887,9 +887,12 @@ img {
   display: inline-block;
   margin-top: 17px;
   padding-top: 17px;
+  padding-right: 20px;
+  padding-left: 20px;
   padding-bottom: 15px;
   border: none;
   border-radius: 3px;
+
   font: inherit;
   line-height: 18px;
   font-weight: 500;
@@ -905,13 +908,15 @@ img {
 }
 
 .button-more {
-  padding-right: 55px;
-  padding-left: 55px;
+  width: 200px;
 }
 
 .button-buy {
-  padding-right: 40px;
-  padding-left: 40px;
+  width: 120px;
+}
+
+.button-write {
+  width: 179px;
 }
 
 .button-red {
@@ -1051,17 +1056,16 @@ img {
 .contacts-popup {
   display: block;
   width: 219px;
-  min-height: 180px;
-  max-height: 340px;
   padding-left: 50px;
   padding-right: 50px;
-  padding-bottom: 60px;
+  padding-bottom: 47px;
   border-top: 1px solid var(--basic-white);
   background-color: var(--basic-white);
 }
 
 .contacts .contacts-title {
-  margin-top: 40px;
+  margin-top: 49px;
+  margin-bottom: 23px;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
@@ -1069,8 +1073,13 @@ img {
   color: var(--basic-black);
 }
 
+.contacts-address {
+  margin: 0;
+}
+
 .contacts-phone {
-  margin-bottom: 30px;
+  margin-top: 18px;
+  margin-bottom: 20px;
 }
 
 /* Social */
