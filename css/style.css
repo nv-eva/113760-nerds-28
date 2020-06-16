@@ -14,7 +14,7 @@
   src: local('Roboto'),
     url('../fonts/robotomedium.woff2') format('woff2'),
     url('../fonts/robotomedium.woff') format('woff'),
-  font-weight: medium;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -103,7 +103,7 @@ h1 {
   padding-bottom: 108px;
   font-size: 55px;
   line-height: 55px;
-  font-weight: medium;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -173,9 +173,10 @@ img {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 45px;
+  margin-top: 49px;
   font-size: 16px;
   line-height: 30px;
+  font-weight: 500;
   text-transform: uppercase;
   color: var(--basic-black);
   background-color: transparent;
@@ -193,13 +194,20 @@ img {
   width: 720px;
   margin: 0;
   margin-top: auto;
+  margin-right: 44px;
   padding: 0;
   list-style: none;
 }
 
 .main-menu li {
   margin: 0;
-  padding: 9px 24px;
+  padding: 9px 22px;
+  margin-right: 2px;
+}
+
+.main-menu li:nth-child(2) {
+  padding-right: 24px;
+  padding-left: 20px;
 }
 
 .menu-cart {
@@ -210,6 +218,20 @@ img {
   padding: 9px 0;
   padding-left: 36px;
   text-align: right;
+}
+
+.menu-cart::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: -3px;
+  width: 15px;
+  height: 15px;
+  background-image: url(../img/icons.svg);
+  background-repeat: no-repeat;
+  background-size: 300px auto;
+  background-position: -43px -144px;
 }
 
 /* Menu buttons */
@@ -288,7 +310,7 @@ img {
   margin: 0;
   font-size: 55px;
   line-height: 55px;
-  font-weight: medium;
+  font-weight: 500;
   color: var(--basic-black);
 }
 
@@ -420,7 +442,7 @@ img {
   margin-bottom: 30px;
   font-size: 45px;
   line-height: 45px;
-  font-weight: medium;
+  font-weight: 500;
   color: var(--basic-black);
 }
 
@@ -844,7 +866,7 @@ img {
   border-radius: 3px;
   font: inherit;
   line-height: 18px;
-  font-weight: medium;
+  font-weight: 500;
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
