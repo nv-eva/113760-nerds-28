@@ -224,8 +224,8 @@ img {
   content: "";
   display: block;
   position: absolute;
-  top: 15px;
-  left: -3px;
+  top: 16px;
+  left: -4px;
   width: 15px;
   height: 15px;
   background-image: url(../img/icons.svg);
