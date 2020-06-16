@@ -919,6 +919,10 @@ img {
   width: 179px;
 }
 
+.button-send {
+  width: 259px;
+}
+
 .button-red {
   background-color: var(--basic-red);
 }
@@ -1167,12 +1171,23 @@ a:active .social-icon {
 
 /* Feedback */
 
+.modal-feedback {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
 .feedback {
   width: 760px;
+  height: 446px;
   margin: auto;
   padding: 0 100px;
-  padding-top: 20px;
+  padding-top: 64px;
   padding-bottom: 80px;
+
   line-height: 18px;
   font-weight: bold;
   color: var(--basic-black);
@@ -1181,6 +1196,9 @@ a:active .social-icon {
 }
 
 .feedback h2 {
+  margin: 0;
+  margin-bottom: 39px;
+  padding: 0;
   font-size: 45px;
   line-height: 50px;
 }
@@ -1192,10 +1210,15 @@ a:active .social-icon {
   justify-content: space-between;
 }
 
+.feedback-form p {
+  margin: 0;
+  padding: 0;
+}
+
 .feedback-form-name,
 .feedback-form-email,
 .feedback-form-area {
-  margin-top: 10px;
+  margin-top: 9px;
   padding: 15px;
   border: 2px solid var(--basic-form);
   border-radius: 3px;
@@ -1208,10 +1231,13 @@ a:active .social-icon {
 .feedback-form-email {
   width: 326px;
   height: 16px;
+  margin-bottom: 34px;
 }
 
 .feedback-form-area {
   width: 726px;
+  height: 84px;
+  margin-bottom: 28px;
 }
 
 .feedback-form-area:hover {
