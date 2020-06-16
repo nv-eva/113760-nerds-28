@@ -438,16 +438,17 @@ img {
 
 .about-text .about-slogan {
   margin: 0;
-  margin-top: 70px;
-  margin-bottom: 30px;
+  margin-top: 73px;
+  margin-bottom: 32px;
   font-size: 45px;
-  line-height: 45px;
+  line-height: 46px;
   font-weight: 500;
   color: var(--basic-black);
 }
 
 .about-text .about-title {
   margin-top: 40px;
+  margin-bottom: 23px;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -459,7 +460,12 @@ img {
 }
 
 .about-text-list  li {
-  margin-bottom: 15px;
+  margin-bottom: 24px;
+  margin-left: 36px;
+}
+
+.about-text-list  li::before {
+
 }
 
 /* About statistics */
