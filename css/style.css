@@ -438,7 +438,7 @@ img {
 
 .about-text {
   width: 660px;
-  padding-bottom: 70px;
+  padding-bottom: 49px;
 }
 
 .about-text .about-slogan {
@@ -482,7 +482,7 @@ img {
 
 .about-statistics {
   width: 360px;
-  padding-bottom: 75px;
+  padding-bottom: 49px;
 }
 
 .color-logo {
@@ -490,6 +490,8 @@ img {
 }
 
 .statistics-title {
+  margin: 29px 0;
+  margin-left: 4px;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
@@ -508,12 +510,16 @@ img {
 }
 
 .about-statistics td {
+  width: 30%;
+  padding-bottom: 11px;
   font-size: 45px;
   line-height: 64px;
   font-weight: bold;
 }
 
 .about-statistics .statistics-unit {
+  display: inline-block;
+  top: -15px;
   font-size: 26px;
   line-height: 40px;
 }
