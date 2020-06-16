@@ -372,7 +372,7 @@ img {
 .services-list .service {
   width: 300px;
   margin-right: 100px;
-  margin-bottom: 78px;
+  margin-bottom: 63px;
 }
 
 .services-list .service:nth-child(3n){
@@ -389,7 +389,7 @@ img {
 }
 
 .service p {
-  padding-right: 18px;
+  padding-right: 20px;
 }
 
 .service-3 {
@@ -885,6 +885,11 @@ img {
 .button-more {
   padding-right: 55px;
   padding-left: 55px;
+}
+
+.button-buy {
+  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .button-red {
