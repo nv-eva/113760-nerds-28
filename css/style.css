@@ -466,11 +466,16 @@ img {
 
 .about-text-list  li {
   margin-bottom: 24px;
-  margin-left: 36px;
 }
 
 .about-text-list  li::before {
-
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 2px;
+  margin-right: 7px;
+  margin-bottom: 4px;
+  background-color: var(--basic-red);
 }
 
 /* About statistics */
