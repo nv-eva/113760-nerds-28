@@ -808,7 +808,11 @@ img {
 
 /* Filter checkbox */
 
-.filter-input-checkbox + label::before {
+.filters .filter-features {
+  margin-bottom: 14px;
+}
+
+.filter-input-checkbox:not(:checked) + label::before {
   content: "";
   position: absolute;
   left: -36px;
@@ -817,6 +821,20 @@ img {
   height: 19px;
   border: 2px solid var(--basic-form-icon);
   border-radius: 3px;
+  opacity: 0.4;
+}
+
+.filter-input-checkbox:checked + label::before {
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: 0;
+  width: 26px;
+  height: 23px;
+  background-image: url(../img/icons.svg);
+  background-repeat: no-repeat;
+  background-size: 300px auto;
+  background-position: -238px -238px;
   opacity: 0.4;
 }
 
@@ -1033,6 +1051,10 @@ img {
 
 .button-send {
   width: 259px;
+}
+
+.button-show {
+  width: 260px;
 }
 
 .button-red {
