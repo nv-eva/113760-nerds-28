@@ -602,7 +602,7 @@ img {
   grid-template-rows: auto auto;
   align-content: start;
   column-gap: 100px;
-  padding-top: 50px;
+  padding-top: 55px;
 }
 
 /* Filters */
@@ -615,7 +615,6 @@ img {
 .filters fieldset {
   margin: 0;
   padding: 0;
-  margin-bottom: 40px;
   border: none;
 }
 
@@ -652,20 +651,25 @@ img {
 
 /* Filter cost */
 
+.filters .filter-cost {
+  margin-bottom: 54px;
+}
+
 .range-filter {
   width: 260px;
-  margin-top: 49px;
+  margin-top: 48px;
+  padding: 0;
 }
 
 .range-controls {
   position: relative;
   height: 41px;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
   background-color: var(--basic-gray);
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .range-controls .scale {
@@ -681,7 +685,7 @@ img {
 
 .range-controls .toggle {
   position: absolute;
-  top: 31px;
+  top: 30px;
   left: 0;
   width: 4px;
   height: 4px;
@@ -717,11 +721,31 @@ img {
 .price-controls input {
   width: 60px;
   padding: 10px;
-  margin-left: 10px;
+  margin-left: 8px;
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
   text-align: center;
   background-color: var(--basic-gray);
+}
+
+.price-controls input[type="number"]::-webkit-outer-spin-button,
+.price-controls input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.price-controls input[type="number"] {
+  -moz-appearance: textfield;
+}
+.price-controls input[type="number"]:hover,
+.price-controls input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+
+.price-controls input[type=number]::-webkit-inner-spin-button,
+.price-controls input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 /* Filters radio */
