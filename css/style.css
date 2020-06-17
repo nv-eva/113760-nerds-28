@@ -165,7 +165,7 @@ img {
 }
 
 .inner-page .main-header {
-  min-height: 120px;
+  padding-bottom: 6px;
 }
 
 .main-menu {
@@ -219,7 +219,6 @@ img {
 }
 
 .user-menu li {
-  margin: 0;
   padding: 9px 0;
 }
 
