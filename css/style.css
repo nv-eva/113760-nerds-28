@@ -986,7 +986,7 @@ img {
 }
 
 .item-text {
-  display: block;
+  display: none;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -1015,6 +1015,10 @@ img {
   margin-bottom: 15px;
   padding: 0 25px;
   line-height: 19px;
+}
+
+.item:hover .item-text {
+  display: block;
 }
 
 /* Shop */
