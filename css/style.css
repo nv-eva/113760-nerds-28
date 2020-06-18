@@ -53,6 +53,7 @@
   --basic-form-icon: #4d4d4d;
   --basic-black-icon: #231f20;
   --basic-gray-icon: #a6a6a6;
+  --basic-gray-item: #f2f2f2;
   --basic-gray-social: #e1e1e1;
   --basic-gray-slider: #c1c1c1;
 
@@ -1019,26 +1020,6 @@ img {
 
 .item:hover .item-text {
   display: block;
-}
-
-/* Shop */
-
-.shop fieldset {
-  margin: 0;
-  margin-top: 60px;
-  margin-bottom: 20px;
-  padding: 0;
-  border: none;
-}
-
-.shop legend {
-  margin: 0;
-  padding: 0;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: var(--basic-black);
 }
 
 /* Button */
