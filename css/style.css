@@ -990,6 +990,7 @@ img {
   position: absolute;
   bottom: 0;
   width: 100%;
+  max-height: 537px;
   line-height: 18px;
   padding-bottom: 44px;
   text-align: center;
@@ -1008,9 +1009,11 @@ img {
 }
 
 .item-text p {
+  display: block;
+  max-height: 388px;
   margin: 0;
   margin-bottom: 15px;
-  padding: 0;
+  padding: 0 25px;
   line-height: 19px;
 }
 
