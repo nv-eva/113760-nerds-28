@@ -935,10 +935,6 @@ img {
 
 /* Catalog items*/
 
-.items {
-
-}
-
 .catalog-list {
   display: flex;
   justify-content: space-between;
@@ -1029,8 +1025,8 @@ img {
   margin-top: 17px;
   padding-top: 17px;
   padding-right: 20px;
-  padding-left: 20px;
   padding-bottom: 15px;
+  padding-left: 20px;
   border: none;
   border-radius: 3px;
 
@@ -1070,6 +1066,10 @@ img {
 
 .button-price {
   width: 160px;
+}
+
+.button-next {
+  width: 219px;
 }
 
 .button-red {
@@ -1157,12 +1157,19 @@ img {
   list-style: none;
 }
 
-.pagination-list li {
+.pagination-list .button-pagination {
+  margin-top: -1px;
   margin-right: 11px;
   margin-bottom: 15px;
+  padding-right: 21px;
+  padding-left: 20px;
 }
 
-.pagination-list .button:not([href]) {
+.pagination-list .list-active {
+  padding-top: 14px;
+  padding-right: 17px;
+  padding-bottom: 12px;
+  padding-left: 18px;
   border: 3px solid var(--basic-gray-border-2);
   background-color: var(--basic-white);
 }
