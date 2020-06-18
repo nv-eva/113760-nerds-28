@@ -852,32 +852,47 @@ img {
 
 /* Filter sort */
 
-.filters .filter-sort {
-  margin-bottom: 27px;
-}
-
 .filter-sort {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   margin-bottom: 48px;
+}
+
+.filter-sort h3 {
+  margin-right: 20px;
 }
 
 .filter-sort-list {
   display: flex;
+  align-items: center;
+  padding-bottom: 2px;
 }
 
 .sort-list-type,
 .sort-list-icons {
   display: flex;
   flex-direction: row;
-  margin: 0;
-  padding: 0;
   list-style: none;
 }
 
-.filter-sort-list li {
-  margin-right: 20px;
+.filter-sort .sort-type {
+  margin: 0;
+  padding: 3px 13px;
+}
+
+.filter-sort .sort-icon {
+  margin: 0;
+  padding: 6px 1px;
+  border: none;
+  font-size: 0;
+  background-color: var(--basic-white);
+}
+
+.filter-sort .icon-down-dir {
+  margin-right: 16px;
+  margin-left: 32px;
 }
 
 .filter-sort .sort {
@@ -898,12 +913,6 @@ img {
 .filter-sort .sort-active,
 .filter-sort .sort:active {
   color: var(--basic-black);
-}
-
-.filter-sort .sort-icon {
-  border: none;
-  font-size: 0;
-  background-color: var(--basic-white);
 }
 
 .sort-icon svg {
