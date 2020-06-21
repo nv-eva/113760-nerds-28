@@ -1081,7 +1081,6 @@ img {
 
 .button:active {
   color: var(--basic-white-opacity);
-  box-shadow: inset 0px 3px 0px var(--basic-box-shadow);
 }
 
 .button-more {
@@ -1127,7 +1126,7 @@ img {
 }
 .button-red:active {
   background-color: var(--basic-red-active);
-  box-shadow: none;
+  box-shadow: inset 0px 3px 0px var(--form-range-shadow);
 }
 
 .button-green {
@@ -1145,7 +1144,7 @@ img {
 }
 .button-green:active {
   background-color: var(--basic-green-active);
-  box-shadow: none;
+  box-shadow: inset 0px 3px 0px var(--form-range-shadow);
 }
 
 .button-yellow {
@@ -1163,7 +1162,7 @@ img {
 }
 .button-yellow:active {
   background-color: var(--basic-yellow-active);
-  box-shadow: none;
+  box-shadow: inset 0px 3px 0px var(--form-range-shadow);
 }
 
 .button-gray {
@@ -1183,7 +1182,7 @@ img {
 .button-gray:active {
   color: var(--basic-black-opacity);
   background-color: var(--basic-gray-active);
-  box-shadow: none;
+  box-shadow: inset 0px 3px 0px var(--form-range-shadow);
 }
 
 /* Pagination */
@@ -1358,8 +1357,8 @@ img {
 		0 0 0 6px var(--basic-red);
 }
 .social a:active {
-  box-shadow: inset 0px 3px 0px var(--basic-box-shadow);
   background-color: var(--basic-red-active);
+  box-shadow: inset 0px 3px 0px var(--form-range-shadow);
 }
 a:active .social-icon {
   opacity: 0.3;
