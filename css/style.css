@@ -1232,8 +1232,15 @@ img {
 }
 
 .map-container {
+  height: 416px;
   text-align: center;
   background-color: var(--basic-gray);
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .map-container img {
