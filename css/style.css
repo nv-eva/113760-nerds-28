@@ -341,8 +341,11 @@ img {
 
 .slider-controls-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   position: absolute;
   bottom: 97px;
+  width: 300px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -383,8 +386,10 @@ img {
 .services-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin-top: 80px;
   padding: 0;
+  padding-right: 60px;
   list-style: none;
 }
 
@@ -394,7 +399,8 @@ img {
   margin-bottom: 63px;
 }
 
-.services-list .service:nth-child(3n){
+.services-list .service:nth-child(3n),
+.services-list .service:last-child {
   margin-right: 0;
 }
 
@@ -1297,12 +1303,14 @@ img {
 }
 
 .social-text p {
+  width: 700px;
   margin: 0;
   padding: 0;
   padding-right: 18px;
 }
 
 .social .call-to-action {
+  width: 700px;
   padding-top: 7px;
   padding-bottom: 10px;
   font-size: 36px;
