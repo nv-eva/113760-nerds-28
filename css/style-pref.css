@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 2 version,not dead,not ie <= 11
+*/
+
 /* Fonts */
 
 @font-face {
@@ -131,7 +138,8 @@ img {
   padding: 0;
   border: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -140,6 +148,7 @@ img {
 
 .page-body {
   display: grid;
+  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
   min-height: 100%;
@@ -633,7 +642,8 @@ img {
   grid-template-columns: 300px 1fr;
   grid-template-rows: auto auto;
   align-content: start;
-  column-gap: 100px;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
   padding-top: 55px;
 }
 
@@ -787,7 +797,9 @@ img {
   position: relative;
   display: block;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 /* Filter radio */
@@ -1437,7 +1449,8 @@ a:active .social-icon {
 
 .modal-show {
   display: block;
-  animation: bounce 0.6s;
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
 }
 
 .feedback {
@@ -1549,6 +1562,23 @@ a:active .social-icon {
 }
 
 /* Animations */
+
+@-webkit-keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+    opacity: 0;
+  }
+
+  80% {
+    transform: translateY(-30px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
 @keyframes bounce {
   0% {
