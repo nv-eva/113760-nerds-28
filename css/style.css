@@ -1393,6 +1393,11 @@ a:active .social-icon {
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
 }
 
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
 .feedback {
   width: 760px;
   height: 446px;
@@ -1461,7 +1466,10 @@ a:active .social-icon {
   color: var(--basic-form-value);
 }
 
-.feedback-form-area:invalid {
+.feedback-form-name:invalid,
+.feedback-form-email:invalid,
+.feedback-form-area:invalid,
+.feedback-form-error {
   border-color: var(--basic-red-hover);
   color: var(--basic-red-hover);
 }
@@ -1495,4 +1503,23 @@ a:active .social-icon {
 }
 .feedback-close:active {
   opacity: 0.1;
+}
+
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+    opacity: 0;
+  }
+
+  80% {
+    transform: translateY(-30px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
