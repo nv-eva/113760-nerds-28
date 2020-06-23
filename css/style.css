@@ -53,6 +53,7 @@
   --basic-form-icon: #4d4d4d;
   --basic-black-icon: #231f20;
   --basic-gray-icon: #a6a6a6;
+
   --basic-gray-item: #f2f2f2;
   --basic-gray-social: #e1e1e1;
   --basic-gray-slider: #c1c1c1;
@@ -73,10 +74,12 @@
   --basic-white-opacity: rgba(255, 255, 255, 0.3);
   --basic-black-opacity: rgba(0, 0, 0, 0.3);
   --basic-black-opacity-2: rgba(0, 0, 0, 0.6);
-  --basic-box-shadow: rgba(0, 0, 0, 0.15);
-  --form-range-shadow: rgba(0, 1, 1, 0.1);
   --form-value-opacity: rgba(68, 68, 68, 0.5); /* #444444 */
   --form-icon-opacity: #eaeaea; /* #4d4d4d */
+
+  --form-range-shadow: rgba(0, 1, 1, 0.1);
+  --basic-box-shadow: rgba(0, 0, 0, 0.15);
+
 }
 
 /* Global */
@@ -89,10 +92,12 @@ body {
   min-width: 1200px;
   margin: 0;
   padding: 0;
+
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: normal;
+
   color: var(--basic-black-text);
   background-color: var(--basic-white);
 }
@@ -104,6 +109,7 @@ h1 {
   padding-right: 36px;
   padding-bottom: 108px;
   padding-left: 20px;
+
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -177,10 +183,12 @@ img {
   justify-content: space-between;
   align-items: center;
   margin-top: 49px;
+
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
   text-transform: uppercase;
+
   color: var(--basic-black);
   background-color: transparent;
 }
@@ -239,6 +247,7 @@ img {
   left: -4px;
   width: 15px;
   height: 15px;
+
   background-image: url(../img/icons.svg);
   background-repeat: no-repeat;
   background-size: 300px auto;
@@ -291,6 +300,7 @@ img {
   min-height: 429px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
+
   background-repeat: no-repeat;
   background-size: 760px 431px;
   background-position: right bottom;
@@ -343,6 +353,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
   position: absolute;
   bottom: 97px;
   width: 300px;
@@ -387,6 +398,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
   margin-top: 80px;
   padding: 0;
   padding-right: 60px;
@@ -427,6 +439,7 @@ img {
   width: 300px;
   height: 146px;
   margin-bottom: 24px;
+
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -465,6 +478,7 @@ img {
   margin: 0;
   margin-top: 73px;
   margin-bottom: 32px;
+
   font-size: 45px;
   line-height: 46px;
   font-weight: 500;
@@ -512,6 +526,7 @@ img {
 .statistics-title {
   margin: 29px 0;
   margin-left: 4px;
+
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
@@ -532,6 +547,7 @@ img {
 .about-statistics td {
   width: 30%;
   padding-bottom: 11px;
+
   font-size: 45px;
   line-height: 64px;
   font-weight: bold;
@@ -556,6 +572,7 @@ img {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
   margin: 0;
   padding: 0;
   padding-top: 43px;
@@ -567,6 +584,7 @@ img {
   justify-content: center;
   align-items: center;
   position: relative;
+
   width: 260px;
   height: 100px;
   margin-bottom: 37px;
@@ -703,6 +721,7 @@ img {
   width: 4px;
   height: 4px;
   padding: 0;
+
   border: 8px solid var(--basic-white);
   background-color: var(--basic-form-range);
   border-radius: 50%;
@@ -785,6 +804,7 @@ img {
   position: absolute;
   left: -36px;
   top: -1px;
+
   width: 17px;
   height: 17px;
   border: 4px solid var(--basic-form-icon);
@@ -797,6 +817,7 @@ img {
   position: absolute;
   left: -28px;
   top: 7px;
+
   width: 9px;
   height: 9px;
   border-radius: 50%;
@@ -834,6 +855,7 @@ img {
   position: absolute;
   left: -36px;
   top: 0;
+
   width: 19px;
   height: 19px;
   border: 2px solid var(--basic-form-icon);
@@ -848,6 +870,7 @@ img {
   top: 0;
   width: 26px;
   height: 23px;
+
   background-image: url(../img/icons.svg);
   background-repeat: no-repeat;
   background-size: 300px auto;
@@ -1036,6 +1059,7 @@ img {
   max-height: 537px;
   line-height: 18px;
   padding-bottom: 44px;
+
   text-align: center;
   color: var(--basic-gray-text);
   background-color: var(--basic-gray);
@@ -1044,6 +1068,7 @@ img {
 .item-text h3 {
   margin-top: 26px;
   margin-bottom: 11px;
+
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
@@ -1120,16 +1145,19 @@ img {
 .button-red {
   background-color: var(--basic-red);
 }
+
 .button-red:hover,
 .button-red:focus {
   background-color: var(--basic-red-hover);
 }
+
 .button-red:focus {
   outline: none;
   box-shadow:
     0 0 0 3px var(--basic-white),
     0 0 0 6px var(--basic-red-hover);
 }
+
 .button-red:active {
   background-color: var(--basic-red-active);
   box-shadow: inset 0px 3px 0px var(--form-range-shadow);
@@ -1138,16 +1166,19 @@ img {
 .button-green {
   background-color: var(--basic-green);
 }
+
 .button-green:hover,
 .button-green:focus {
   background-color: var(--basic-green-hover);
 }
+
 .button-green:focus {
   outline: none;
   box-shadow:
     0 0 0 3px var(--basic-white),
     0 0 0 6px var(--basic-green-hover);
 }
+
 .button-green:active {
   background-color: var(--basic-green-active);
   box-shadow: inset 0px 3px 0px var(--form-range-shadow);
@@ -1156,16 +1187,19 @@ img {
 .button-yellow {
   background-color: var(--basic-yellow);
 }
+
 .button-yellow:hover,
 .button-yellow:focus {
   background-color: var(--basic-yellow-hover);
 }
+
 .button-yellow:focus {
   outline: none;
   box-shadow:
     0 0 0 3px var(--basic-white),
     0 0 0 6px var(--basic-yellow-hover);
 }
+
 .button-yellow:active {
   background-color: var(--basic-yellow-active);
   box-shadow: inset 0px 3px 0px var(--form-range-shadow);
@@ -1175,16 +1209,19 @@ img {
   color: var(--basic-black);
   background-color: var(--basic-gray);
 }
+
 .button-gray:hover,
 .button-gray:focus {
   background-color: var(--basic-gray-hover);
 }
+
 .button-gray:focus {
   outline: none;
   box-shadow:
     0 0 0 3px var(--basic-white),
     0 0 0 6px var(--basic-red-hover);
 }
+
 .button-gray:active {
   color: var(--basic-black-opacity);
   background-color: var(--basic-gray-active);
@@ -1259,6 +1296,7 @@ img {
   align-items: center;
   left: 50%;
   top: 50%;
+
   margin-left: -600px;
   margin-top: -208px;
   height: 416px;
@@ -1271,6 +1309,7 @@ img {
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 47px;
+
   border-top: 1px solid var(--basic-white);
   background-color: var(--basic-white);
 }
@@ -1278,6 +1317,7 @@ img {
 .contacts .contacts-title {
   margin-top: 49px;
   margin-bottom: 23px;
+
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
@@ -1313,6 +1353,7 @@ img {
   width: 700px;
   padding-top: 7px;
   padding-bottom: 10px;
+
   font-size: 36px;
   line-height: 36px;
   font-weight: bold;
@@ -1389,6 +1430,7 @@ a:active .social-icon {
   bottom: 0;
   left: 0;
   margin: auto;
+
   background-color: var(--basic-white);
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
 }
@@ -1438,6 +1480,7 @@ a:active .social-icon {
   padding: 15px;
   border: 2px solid var(--basic-form);
   border-radius: 3px;
+  
   font: inherit;
   font-weight: normal;
   color: var(--form-value-opacity);
