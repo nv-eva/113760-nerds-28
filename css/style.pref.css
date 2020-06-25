@@ -5,6 +5,14 @@
 * Browsers: last 2 version,not dead,not ie <= 11
 */
 
+.example {
+    display: grid;
+    transition: all .5s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+    background: linear-gradient(to bottom, white, black);
+}
 /* Fonts */
 
 @font-face {
@@ -344,7 +352,7 @@ img {
   width: 460px;
   margin: 0;
   margin-top: 26px;
-  margin-bottom: 21px;
+  margin-bottom: 38px;
 }
 
 /* Slider controls */
@@ -433,6 +441,7 @@ img {
 
 .service p {
   padding-right: 20px;
+  margin-bottom: 32px;
 }
 
 .service-3 {
@@ -505,12 +514,18 @@ img {
 }
 
 .about-text-list  li {
+  position: relative;
+  left: 36px;
   margin-bottom: 24px;
 }
 
 .about-text-list  li::before {
   content: "";
-  display: inline-block;
+  display: block;
+  position: absolute;
+  top: 11px;
+  left: -36px;
+
   width: 25px;
   height: 2px;
   margin-right: 12px;
@@ -561,7 +576,8 @@ img {
 
 .about-statistics .statistics-unit {
   display: inline-block;
-  top: -15px;
+  vertical-align: bottom;
+  top: -20px;
   font-size: 26px;
   line-height: 40px;
 }
@@ -1101,7 +1117,7 @@ img {
 /* Button */
 
 .button {
-  display: inline-block;
+  display: block;
   margin-top: 17px;
   padding-top: 17px;
   padding-right: 20px;
@@ -1343,7 +1359,7 @@ img {
 
 .contacts-phone {
   margin-top: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 37px;
 }
 
 /* Social */
