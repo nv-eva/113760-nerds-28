@@ -54,3 +54,46 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+
+/* Slider */
+
+var control1 = document.querySelector(".slider-control-1");
+var control2 = document.querySelector(".slider-control-2");
+var control3 = document.querySelector(".slider-control-3");
+var slide1 = document.querySelector(".slide-1");
+var slide2 = document.querySelector(".slide-2");
+var slide3 = document.querySelector(".slide-3");
+
+
+control1.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  slide1.classList.remove("visually-hidden");
+  slide2.classList.add("visually-hidden");
+  slide3.classList.add("visually-hidden");
+
+  control1.classList.add("slider-control-active");
+  control2.classList.remove("slider-control-active");
+  control3.classList.remove("slider-control-active");
+});
+
+control2.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  slide2.classList.remove("visually-hidden");
+  slide1.classList.add("visually-hidden");
+  slide3.classList.add("visually-hidden");
+
+  control2.classList.add("slider-control-active");
+  control1.classList.remove("slider-control-active");
+  control3.classList.remove("slider-control-active");
+});
+
+control3.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  slide3.classList.remove("visually-hidden");
+  slide1.classList.add("visually-hidden");
+  slide2.classList.add("visually-hidden");
+
+  control3.classList.add("slider-control-active");
+  control1.classList.remove("slider-control-active");
+  control2.classList.remove("slider-control-active");
+});
