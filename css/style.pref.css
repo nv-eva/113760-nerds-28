@@ -1153,6 +1153,8 @@ img {
 }
 
 .button-price {
+  display: inline-block;
+  vertical-align: bottom;
   width: 160px;
 }
 
